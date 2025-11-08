@@ -1,12 +1,18 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import App from './App';
 import './styles/globals.css';
 
-const rootElement = document.getElementById('root') as HTMLElement;
-ReactDOM.render(
+console.log('index.tsx loaded'); // <- Testlog
+
+
+const rootContainer = document.getElementById('root') as HTMLElement;
+if (!rootContainer) {
+  throw new Error("Root element with id 'root' not found. Check public/index.html");
+}
+const root =  createRoot(rootContainer)
+root.render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>,
-  rootElement
+  </React.StrictMode>
 );

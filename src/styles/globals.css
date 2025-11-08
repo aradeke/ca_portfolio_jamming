@@ -1,13 +1,170 @@
 body {
-    margin: 0;
+    margin: 0 auto;
+    padding: 2rem 5rem;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #004;
     color: #333;
 }
 
-h1, h2, h3, h4, h5, h6 {
+header, footer {
+    color: #0000ef;
+    padding: 10px 0;
+    text-align: left;
+    display: block;
+}
+
+main {
+    width: 80%;
+    display: flex;
+    align-items: flex-start;
+    color: #ccf;
+}
+
+.card {
+    display: block;
+    float:left;
+    align-content: space-between;
+    min-height: 80vh;    
+    width: 400px;
+    background-color: rgba(0, 100, 255, 0.3);
+    border-radius: 8px;
+    margin: 0 2rem 2rem 0;
+    padding: 2rem;
+   
+}
+
+.card div {
+    margin-bottom: 2rem;
+}
+
+.card ul {
+    padding: 0;
+    list-style-type: none;
+    width: 100%;
+    background: rgba(255,255,255,0.2);
+}
+
+.card li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    background: rgba(255,255,255,0.2);
+}
+
+.track {
+    display: inline-block;
+    width: calc(100% - 2.8rem);
+}
+
+
+button {
+    background: #eef;
+    color: #004;
+    line-height: 2rem;
+    height: 2.1rem;
+    min-width: 2.1rem;
+    border-radius: 0 10px 10px 0;
+
+    border: 0px;
+}
+
+#spotifyLogin {
+    border-radius: 10px;
+    width: 11rem;
+}
+
+.card ul {
+    padding: 0;
+    list-style-type: none;
+    width: 100%;
+    background: rgba(255,255,255,0.2);
+    border-radius: 10px;
+}
+
+.card li {
+    display: flex;
+    justify-content: space-between;
+    align-items: strech;
+    margin-bottom: 0.5rem;
+    background: rgba(255,255,255,0.2);
+    border-radius: 10px;
+    padding: 5px;
+    padding-right: 0px;
+}
+
+.card li button {
+   height: 100%;
+}
+
+#searchForm {
+    margin: 1rem 0;
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+}
+
+#searchForm #dummyButton {
+    border-radius: 10px 0 0 10px;
+}
+
+#pagination {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#searchCard input {
+    line-height: 2rem;
+    border: 0px;
+    width:100%;
+}
+
+#pagination #resultsBackButton {
+    border-radius: 10px 0 0 10px;
+}
+
+
+
+#headPlayList {
+    display: block;
+    width: calc(100% - 2.1rem);
+
+}
+
+#playListName {
+    display: inline;
+    width: 90%;
+    margin: 1rem 0;
+    height: 2.1rem;
+    border-radius: 10px;
+    border: 0px;
+    padding: 0px 2.1rem;
+}
+
+#saveToSpotify {
+    width: 100%;
+}
+
+#saveToSpotifyButton {
+    height: 2.1rem;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+    border: 0px;
+}
+
+h1 {
+    color: #5555ff;
+
+}
+
+h2, h3, h4, h5, h6 {
+    color: #aaaaff;
     margin: 0;
     padding: 0;
+    font-weight: normal;
+    
 }
 
 a {
@@ -15,18 +172,7 @@ a {
     color: inherit;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
 
-.header, .footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-}
 
 .portfolio-card {
     background-color: #fff;
