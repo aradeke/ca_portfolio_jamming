@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Header from './components/Header'
 import PlayList from './components/PlayList';
 import TrackList from './components/TrackList';
 import SearchBar from './components/SearchBar';
@@ -283,7 +284,7 @@ const App: React.FC = () => {
 
   return (
     <>
-    <header><h1>Jammming</h1></header>
+    <Header />
     <main>
       {!accessToken ? 
         <button id="spotifyLogin" onClick={login}>Log in with Spotify</button> :
